@@ -16,7 +16,7 @@ npm install react-mvp
 
 ### Usage
 
-1. Declare your view, as a "dumb" component, with all input and output taking place through props (values and event handlers).
+Declare your view, as a "dumb" component, with all input and output taking place through props (values and event handlers).
 
 ```js
 import React from 'react'
@@ -42,7 +42,7 @@ class TodoApp extends Component {
 }
 ```
 
-2. Declare your model, with any needed defaults.
+Then declare your model, with any needed defaults.
 
 ```js
 class TodoAppModel {
@@ -52,7 +52,7 @@ class TodoAppModel {
 }
 ```
 
-3. Declare your presenter, as a class that inherits from `Presenter` in react-mvp.
+Then declare your presenter, as a class that inherits from `Presenter` in react-mvp.
 
 ```js
 import { Presenter } from 'react-mvp'
@@ -75,7 +75,7 @@ class TodoAppPresenter extends Presenter {
 }
 ```
 
-4. Hook them all up together, using `connect`, and render the result. (This example assumes a web-browser.)
+Finally, hook them all up together, using `connect`, and render the result. (This example assumes a web-browser.)
 
 ```js
 import { connect } from 'react-mvp'
